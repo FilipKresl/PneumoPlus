@@ -606,6 +606,12 @@ body {
   font-size: .9rem;
 }
 
+@media (max-width: 800px) {
+  .contact-list li {
+    grid-template-columns: 1fr 2.5fr;
+  }
+}
+
 .contact-list .label {
   font-weight: 600;
   color: var(--text);
