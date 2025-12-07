@@ -1,0 +1,384 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="cs">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>PneumoPlus s. r. o. – Plicní ambulance</title>
+  <link rel="stylesheet" href="./styles/main.css" />
+  <link rel="icon" href="./img/logo.png" type="image/png" />
+</head>
+
+<body>
+  <!-- Header -->
+  <header class="site-header" id="siteHeader">
+    <div class="header-inner">
+      <a href="#uvod" class="brand">
+        <div class="logo-wrapper">
+          <div class="logo-icon">
+            <img src="./img/logo.png" alt="Pneumo Plus logo">
+          </div>
+
+          <div class="logo-text">
+            <div class="line-1">Pneumo</div>
+            <div class="line-2">
+              <span class="plus">Plus</span>
+              <span class="sro">s.r.o.</span>
+            </div>
+          </div>
+        </div>
+        <!-- <small>Pneumologická ambulance se zaměřením na dětské pacienty</small> -->
+      </a>
+      <nav class="main-nav" aria-label="Hlavní navigace">
+        <a href="#uvod" class="nav-link active">Úvod</a>
+        <a href="#sluzby" class="nav-link">Služby</a>
+        <a href="#tym" class="nav-link">Tým</a>
+        <a href="#kontakt" class="nav-link">Kontakt</a>
+      </nav>
+      <button class="primary-btn" id="bookTop">Objednat se</button>
+      <button class="nav-toggle" id="navToggle" aria-label="Otevřít menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobilní menu -->
+  <aside class="mobile-panel" id="mobilePanel" aria-hidden="true">
+    <a href="#uvod" class="mob-link">Úvod</a>
+    <a href="#sluzby" class="mob-link">Služby</a>
+    <a href="#tym" class="mob-link">Tým</a>
+    <a href="#kontakt" class="mob-link">Kontakt</a>
+    <button class="primary-btn full" id="bookTopMobile">Objednat se</button>
+  </aside>
+  <div class="backdrop" id="backdrop" aria-hidden="true"></div>
+
+  <main>
+    <!-- Úvod -->
+    <section id="uvod" class="hero">
+      <div class="headline">
+        <h1 class="biggerHeadline">Vítáme Vás na stránkách PneumoPlus s. r. o.</h1>
+        <h1 class="smallerHeadline">Plicní ambulance se zaměřením na dětský věk</h1>
+      </div>
+      <div class="hero-grid">
+        <div>
+          <p class="lead">
+            Spojujeme moderní medicínu, dlouholeté zkušenosti a&nbsp;lidský, klidný přístup k dětem i&nbsp;jejich
+            rodičům.
+            Naším cílem je přesná diagnostika, individuálně vedená léčba a&nbsp;co nejlepší prevence respiračních
+            onemocnění
+            v&nbsp;každém věku, včetně novorozenců a&nbsp;předčasně narozených miminek.
+            Naše péče je založena na odbornosti, důslednosti a&nbsp;respektu k&nbsp;potřebám každého jedince. Zaměřujeme
+            se na včasné odhalení potíží, dlouhodobé sledování i komplexní podporu rodin. Léčíme onemocnění horních
+            i&nbsp;dolních
+            dýchacích cest – alergie, astma, opakované infekce, chronický kašel, dušnost i&nbsp;další respirační obtíže.
+            Samozřejmou součástí je také edukace rodičů a&nbsp;nácvik správné inhalační techniky, aby byla léčba účinná
+            i&nbsp;v&nbsp;domácím prostředí.
+            Vnímáme úzkou souvislost mezi dýcháním, psychickou pohodou, držením těla i&nbsp;stavem výživy, proto naše
+            diagnostické a léčebné postupy přizpůsobujeme každému dítěti komplexně a&nbsp;citlivě.
+            Jsme tu pro všechny, které trápí kašel, dušnost, opakované rýmy či jiné potíže s&nbsp;dýcháním.
+            Pomáháme našim pacientům volněji dýchat, žít aktivně, sportovat a&nbsp;zlepšovat tak kvalitu jejich
+            každodenního
+            života – s&nbsp;odbornou péčí a&nbsp;lidským přístupem, který si zaslouží.
+          </p>
+        </div>
+        <div>
+          <div class="card intro-card">
+            <h2>Ordinační hodiny</h2>
+            <p class="small-note">Pouze po předchozím objednání</p>
+            <table class="hours">
+              <tbody>
+                <tr>
+                  <th>Čtvrtek</th>
+                  <td><time datetime="12:00">12:00</time> – <time datetime="19:00">19:00</time></td>
+                </tr>
+                <tr>
+                  <th>Pátek</th>
+                  <td><time datetime="07:00">7:00</time> – <time datetime="18:00">18:00</time></td>
+                </tr>
+              </tbody>
+            </table>
+            <button class="primary-btn full" id="bookCard">Objednat se</button>
+            <p class="small-muted">
+              Online objednání proběhne na externí stránce.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Imgs -->
+    <section class="section">
+      <div class="card image-gallery">
+        <img src="./img/welcome.jpg" alt="Vstup do ambulance">
+        <img src="./img/cekarna.jpg" alt="Čekárna">
+      </div>
+    </section>
+
+
+    <!-- Tým -->
+    <section id="tym" class="section">
+      <header class="section-head">
+        <h2>Náš tým</h2>
+        <p>Sehrané duo s dlouholetou praxí, pro které je medicína více než práce.</p>
+      </header>
+
+      <div class="team-diagonal">
+        <!-- Doktorka -->
+        <article class="person card card-doc">
+          <div class="person-head">
+            <div>
+              <h3>MUDr. Marcela Kreslová, Ph.D.</h3>
+              <div>
+                <p class="eyebrow">Pediatr</p>
+                <p class="eyebrow">Pneumolog</p>
+              </div>
+              <div class="person-meta">
+                <h4>Vzdělání</h4>
+                <ul class="cv-list">
+                  <li>Lékařská fakulta UK v Plzni – Všeobecné lékařství (1990–1996)</li>
+                  <li>Atestace z Pediatrie (1999) a Dětského lékařství (2008)</li>
+                  <li>Odborná způsobilost v Dětské pneumologii (2012)</li>
+                  <li>Kurzy Funkční plicní diagnostiky a Flexibilní bronchoskopie (2011)</li>
+                  <li>Postgraduální studium Ph.D., LF UK v Plzni (2020)</li>
+                  <li>Klinická výživa a intenzivní metabolická péče, licence ČLK F016 (2022)</li>
+                  <li>Diplom celoživotního vzdělávání ČLK (2025)</li>
+                </ul>
+
+                <h4>Odborná praxe</h4>
+                <ul class="cv-list">
+                  <li>1996–2004 Klatovská nemocnice, a.s.</li>
+                  <li>2004–2006 Nemocnice u Sv. Jiří, Plzeň</li>
+                  <li>
+                    2006–dosud Dětská klinika FN Plzeň – pneumologická ambulance a Centrum cystické fibrózy
+                    <ul class="cv-sub">
+                      <li>2010–2013 zástupce vedoucí lékařky Kojenecko-batolecího oddělení</li>
+                      <li>2013–2018 lékařka Jednotky intenzivní a resuscitační péče Dětské kliniky</li>
+                      <li>2018–2025 zástupce vedoucí lékařky Oddělení větších dětí</li>
+                    </ul>
+                  </li>
+                  <li>2017–dosud odborná asistentka LF UK v Plzni</li>
+                  <li>2024–dosud odborná garantka projektu „Cystická fibróza v praxi“ pro praktické lékaře</li>
+                </ul>
+                <a class="cv-download" href="./assets/cv/marcela-kreslova-cv.pdf" download>Celý životopis
+                  <img class="pdf-icon" src="./img/pdf-icon.png">
+                </a>
+              </div>
+            </div>
+            <img class="profile" src="./img/doc.jpg">
+          </div>
+        </article>
+
+        <!-- Sestra -->
+        <article class="person card card-ses">
+          <div class="person-head">
+            <img class="profile" src="./img/ses.jpg">
+            <div>
+              <h3>Bc. Miluše Honzíková, DiS.</h3>
+              <div>
+                <p class="eyebrow">Dětská sestra</p>
+              </div>
+              <div class="person-meta">
+                <h4>Vzdělání</h4>
+                <ul class="cv-list">
+                  <li>SZŠ Plzeň – všeobecná sestra (1993–1997)</li>
+                  <li>SZŠ a VZŠ Plzeň – diplomovaný specialista, dětská sestra (1997–2000)</li>
+                  <li>ZČU, Fakulta zdravotnických studií – bakalář v oboru všeobecná sestra (2011–2014)</li>
+                  <li>Stáž na Pediatrické klinice FN Motol (2018)</li>
+                </ul>
+
+                <h4>Odborná praxe</h4>
+                <ul class="cv-list">
+                  <li>1998 Jednotka intenzivní péče, Neonatologické oddělení FN Plzeň</li>
+                  <li>2000–2018 Jednotka intenzivní a resuscitační péče, Neonatologické oddělení FN Plzeň</li>
+                  <li>
+                    2018–dosud pneumologická ambulance a Centrum cystické fibrózy, Dětská klinika FN Plzeň
+                    <ul class="cv-sub">
+                      <li>Dětská sestra</li>
+                      <li>Vyšetření chloridů v potu</li>
+                      <li>Asistence u fibrobronchoskopií</li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Služby -->
+    <section id="sluzby" class="section">
+      <header class="section-head">
+        <h2>Naše služby</h2>
+        <p>Nejmodernější přístrojové vybavení a postupy přizpůsobené i těm nejmenším dětem.</p>
+      </header>
+      <div class="service-grid">
+        <article class="svc-card">
+          <h3>Diagnostika a léčba</h3>
+          <ul class="svc-list">
+            <li>Diagnostika a léčba akutních a&nbsp;chronických onemocnění horních a&nbsp;dolních dýchacích cest</li>
+            <li>Odborné vyšetření plicním lékařem</li>
+          </ul>
+        </article>
+        <article class="svc-card">
+          <h3>Komplexní funkční vyšetření plic</h3>
+          <ul class="svc-list">
+            <li>Základní – spirometrie</li>
+            <li>Rozšířené – difuzní kapacita plic, měření odporů dýchacích cest, bronchodilatační a bronchoprovokační
+              testy</li>
+          </ul>
+        </article>
+        <article class="svc-card">
+          <h3>FENO</h3>
+          <ul class="svc-list">
+            <li>Kvantitativní stanovení oxidu dusnatého ve vydechovaném vzduchu</li>
+          </ul>
+        </article>
+        <article class="svc-card">
+          <h3>Pulzní oxymetrie</h3>
+          <ul class="svc-list">
+            <li>Měření saturace hemoglobinu kyslíkem</li>
+          </ul>
+        </article>
+        <article class="svc-card">
+          <h3>Laboratorní a mikrobiologické vyšetření</h3>
+          <ul class="svc-list">
+            <li>Odběry krve</li>
+            <li>Výtěry z horních dýchacích cest a vyšetření sputa</li>
+          </ul>
+        </article>
+        <article class="svc-card">
+          <h3>Edukace a dechová rehabilitace</h3>
+          <ul class="svc-list">
+            <li>Správná inhalační technika</li>
+            <li>Režimová opatření</li>
+            <li>Individuálně nácvik správného dýchání a odkašlávání včetně volby rehabilitační pomůcky</li>
+          </ul>
+        </article>
+        <article class="svc-card">
+          <h3>Inhalační léčba</h3>
+          <ul class="svc-list">
+            <li>Inhalace bronchodilatancií: Ventolinu a Atroventu</li>
+            <li>Inhalace mukolytik: 3% NaCl a Vincentky</li>
+          </ul>
+        </article>
+        </article>
+        <article class="svc-card">
+          <h3>RTG konzultace</h3>
+          <ul class="svc-list">
+            <li>Pneumologické posouzení radiologických nálezů</li>
+          </ul>
+        </article>
+        <article class="svc-card">
+          <h3>Nutriční posouzení</h3>
+          <ul class="svc-list">
+            <li>Hodnocení stavu výživy ve vztahu k&nbsp;respiračnímu onemocnění</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <!-- Kontakt -->
+    <section id="kontakt" class="section">
+      <header class="section-head">
+        <h2>Kde nás najdete</h2>
+      </header>
+      <div class="contact-grid">
+        <div class="card">
+          <h3>Ambulance</h3>
+          <p class="small-note">Pouze po předchozím objednání</p>
+          <ul class="contact-list">
+            <li>
+              <span class="label with-icon label-phone">Telefon:</span>
+              <a href="tel:+420123456789">+420&nbsp;601&nbsp;59&nbsp;56&nbsp;56</a>
+            </li>
+            <li>
+              <span class="label with-icon label-email">E-mail do ordinace:</span>
+              <a href="mailto:ordinace@pneumoplus.cz">ordinace@pneumoplus.cz</a>
+            </li>
+            <li>
+              <span class="label with-icon label-email">E-mail na lékaře:</span>
+              <a href="mailto:marcela.kreslova@pneumoplus.cz">marcela.kreslova@pneumoplus.cz</a>
+            </li>
+            <li>
+              <span class="label with-icon label-address">Adresa:</span>
+              <a href="https://www.google.com/maps/search/?api=1&query=Voldu%C5%A1sk%C3%A1+750%2C+337+01+Rokycany"
+                target="_blank" rel="noopener noreferrer">
+                Voldušská 750, 337 01 Rokycany
+              </a><!-- <span>Voldušská 750, 337 01 Rokycany</span> -->
+            </li>
+            <li class="stacked">
+              <span class="label with-icon label-parking">Parkování:</span>
+              <ul class="location-tips">
+                <li>před vjezdem do areálu: zdarma</li>
+                <li>v areálu nemocnice:</li>
+                <ul class="location-sub">
+                  <li>zdarma prvních 60 minut, poté 20 Kč/hod</li>
+                  <li>zdarma první 3 hodiny při návštěvě lékárny</li>
+                  <li>zdarma pro držitele ZTP/P bez omezení</li>
+                </ul>
+              </ul>
+            </li>
+          </ul>
+          <button class="primary-btn" id="bookContact">Objednat se</button>
+        </div>
+        <div class="map card">
+          <div class="map-header">
+            <h3>Mapa</h3>
+            <div class="map-tips">
+              <p>📍 Rokycanská nemocnice, 1. patro hlavní budovy vpravo, u Dětského oddělení</p>
+            </div>
+          </div>
+          <div class="map-embed">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1614.6739394603278!2d13.603121128941227!3d49.74876448591184!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470afd6287ca9617%3A0x8f900c09e5ee6fcf!2sPneumoPlus%20s.r.o.!5e0!3m2!1scs!2scz!4v1765130396730!5m2!1scs!2scz"
+              loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen
+              title="Mapa – U Kliniky 12, Praha"></iframe>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Legal -->
+    <section class="legal section" aria-label="Právní informace">
+      <div class="card">
+        <h3>Jsme smluvním pracovištěm těchto zdravotních pojišťoven</h3>
+        <section class="insurance-strip">
+          <div class="ins-wrap">
+            <img src="./img/loga_pojistovny/111.png" alt="111">
+            <img src="./img/loga_pojistovny/201.png" alt="201">
+            <img src="./img/loga_pojistovny/211.png" alt="211">
+            <img src="./img/loga_pojistovny/205.png" alt="205">
+            <img src="./img/loga_pojistovny/207.pdf" alt="207">
+            <img src="./img/loga_pojistovny/209.pdf" alt="209">
+            <img src="./img/loga_pojistovny/213.jpg" alt="213">
+          </div>
+        </section>
+      </div>
+    </section>
+  </main>
+
+  <!-- Legal -->
+  <section class="legal section" aria-label="Právní informace">
+    <div class="card">
+      <h3>Právní informace</h3>
+      <p>PneumoPlus s. r. o., IČO: 23183837</p>
+      <p>Objednáním pacienta potvrzujete správnost poskytnutých údajů a souhlasíte se zpracováním osobních údajů pro
+        účely ambulantního vyšetření.</p>
+      <p>Ambulance neposkytuje neobjednanou akutní péči.</p>
+    </div>
+  </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <p>&copy; <span id="year"></span> PneumoPlus s. r. o. Všechna práva vyhrazena.</p>
+    <a href="#uvod" class="top-btn" id="topBtn" aria-label="Zpět nahoru">↑</a>
+  </footer>
+
+  <script src="./src/main.js"></script>
+</body>
+
+</html>
