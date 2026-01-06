@@ -872,3 +872,16 @@ body {
     background: rgba(0, 0, 0, 0.45);
   }
 }
+
+.contact-list > ul.phone-tip {
+  margin: 0;
+  padding: 0;
+}
+
+.contact-list > li + ul.phone-tip {
+  margin-top: -0.2rem;
+}
+
+.contact-list > ul.phone-tip.location-tips {
+  padding-left: 0.5em;
+}
