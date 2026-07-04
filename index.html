@@ -19,7 +19,6 @@
           <div class="logo-icon">
             <img src="./img/logo.png" alt="Pneumo Plus logo">
           </div>
-
           <div class="logo-text">
             <div class="line-1">Pneumo</div>
             <div class="line-2">
@@ -28,7 +27,6 @@
             </div>
           </div>
         </div>
-        <!-- <small>Pneumologická ambulance se zaměřením na dětské pacienty</small> -->
       </a>
       <nav class="main-nav" aria-label="Hlavní navigace">
         <a href="#uvod" class="nav-link active">Úvod</a>
@@ -36,7 +34,7 @@
         <a href="#tym" class="nav-link">Tým</a>
         <a href="#kontakt" class="nav-link">Kontakt</a>
       </nav>
-      <button class="primary-btn" id="bookTop">Objednat se</button>
+      <button class="primary-btn js-book-btn" id="bookTop">Objednat se</button>
       <button class="nav-toggle" id="navToggle" aria-label="Otevřít menu">
         <span></span><span></span><span></span>
       </button>
@@ -49,7 +47,7 @@
     <a href="#sluzby" class="mob-link">Služby</a>
     <a href="#tym" class="mob-link">Tým</a>
     <a href="#kontakt" class="mob-link">Kontakt</a>
-    <button class="primary-btn full" id="bookTopMobile">Objednat se</button>
+    <button class="primary-btn full js-book-btn" id="bookTopMobile">Objednat se</button>
   </aside>
   <div class="backdrop" id="backdrop" aria-hidden="true"></div>
 
@@ -58,7 +56,7 @@
     <section id="uvod" class="hero">
       <div class="headline">
         <h1 class="biggerHeadline">Vítáme Vás na stránkách PneumoPlus s. r. o.</h1>
-        <h1 class="smallerHeadline">Plicní ambulance se zaměřením na dětský věk</h1>
+        <h2 class="smallerHeadline">Plicní ambulance se zaměřením na dětský věk</h2>
       </div>
       <div class="hero-grid">
         <div>
@@ -98,7 +96,7 @@
                 </tr>
               </tbody>
             </table>
-            <button class="primary-btn full" id="bookCard">Objednat se</button>
+            <button class="primary-btn full js-book-btn" id="bookCard">Objednat se</button>
             <p class="small-muted">
               Online objednání proběhne na externí stránce.
             </p>
@@ -161,7 +159,7 @@
                   <li>2024–dosud odborná garantka projektu „Cystická fibróza v praxi“ pro praktické lékaře</li>
                 </ul>
                 <a class="cv-download" href="./assets/CV-Kreslova.pdf" download>Celý životopis
-                  <img class="pdf-icon" src="./img/pdf-icon.png">
+                  <img class="pdf-icon" src="./img/pdf-icon.png" alt="PDF ikona">
                 </a>
               </div>
             </div>
@@ -172,7 +170,6 @@
         <!-- Sestra -->
         <article class="person card card-ses">
           <div class="person-head">
-            <img class="profile" src="./img/ses.jpg">
             <div>
               <h3>Bc. Miluše Honzíková, DiS.</h3>
               <div>
@@ -202,6 +199,7 @@
                 </ul>
               </div>
             </div>
+            <img class="profile" src="./img/ses.jpg">
           </div>
         </article>
       </div>
@@ -279,6 +277,24 @@
       </div>
     </section>
 
+    <!-- Pojišťovny -->
+    <section id="pojistovny" class="section">
+      <header class="section-head">
+        <h2>Jsme smluvním partnerem těchto zdravotních pojišťoven</h2>
+      </header>
+      <div class="card insurance-card">
+        <div class="ins-wrap">
+          <img src="./img/loga_pojistovny/111.png" alt="Všeobecná zdravotní pojišťovna (111)">
+          <img src="./img/loga_pojistovny/201.png" alt="Vojenská zdravotní pojišťovna (201)">
+          <img src="./img/loga_pojistovny/211.png" alt="Pojišťovna ministerstva vnitra (211)">
+          <img src="./img/loga_pojistovny/205.png" alt="Česká průmyslová zdravotní pojišťovna (205)">
+          <img src="./img/loga_pojistovny/213.jpg" alt="Revírní bratrská pokladna (213)">
+          <img src="./img/loga_pojistovny/209.png" alt="Zaměstnanecká pojišťovna Škoda (209)">
+          <img src="./img/loga_pojistovny/207.png" alt="Oborová zdravotní pojišťovna (207)">
+        </div>
+      </div>
+    </section>
+
     <!-- Kontakt -->
     <section id="kontakt" class="section">
       <header class="section-head">
@@ -324,7 +340,7 @@
               </ul>
             </li>
           </ul>
-          <button class="primary-btn" id="bookContact">Objednat se</button>
+          <button class="primary-btn js-book-btn" id="bookContact">Objednat se</button>
         </div>
         <div class="map card">
           <div class="map-header">
@@ -344,38 +360,15 @@
       </div>
     </section>
 
-    <!-- Legal -->
-    <section class="legal section" aria-label="Právní informace">
-      <div class="card">
-        <h3>Jsme smluvním partnerem těchto zdravotních pojišťoven</h3>
-        <section class="insurance-strip">
-          <div class="ins-wrap">
-            <img src="./img/loga_pojistovny/111.png" alt="111">
-            <img src="./img/loga_pojistovny/201.png" alt="201">
-            <img src="./img/loga_pojistovny/211.png" alt="211">
-            <img src="./img/loga_pojistovny/205.png" alt="205">
-            <img src="./img/loga_pojistovny/213.jpg" alt="213">
-            <img src="./img/loga_pojistovny/209.png" alt="209">
-          </div>
-        </section>
-      </div>
-    </section>
-  </main>
-
-  <!-- Legal -->
-  <section class="legal section" aria-label="Právní informace">
-    <div class="card">
-      <h3>Právní informace</h3>
-      <p>PneumoPlus s. r. o., IČO: 23183837</p>
-      <p>Objednáním pacienta potvrzujete správnost poskytnutých údajů a souhlasíte se zpracováním osobních údajů pro
-        účely ambulantního vyšetření.</p>
-      <p>Ambulance neposkytuje neobjednanou akutní péči.</p>
-    </div>
-  </section>
   </main>
 
   <!-- Footer -->
   <footer class="site-footer">
+    <div class="legal-info">
+      <p>PneumoPlus s. r. o., IČO: 23183837</p>
+      <p>Objednáním pacienta potvrzujete správnost poskytnutých údajů a souhlasíte se zpracováním osobních údajů pro
+        účely ambulantního vyšetření. Ambulance neposkytuje neobjednanou akutní péči.</p>
+    </div>
     <p>&copy; <span id="year"></span> PneumoPlus s. r. o. Všechna práva vyhrazena.</p>
     <a href="#uvod" class="top-btn" id="topBtn" aria-label="Zpět nahoru">↑</a>
   </footer>
